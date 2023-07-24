@@ -34,7 +34,7 @@ public class Snake {
         currently 3 squares in the left middle of the board
          */
         for (int[] coord : Constants.SNAKE_INITIAL_COORDINATES) {
-            BoardSquare tile = this.board.tileAt(coord[0], coord[1]);
+            BoardSquare tile = this.board.getTileAt(coord[0], coord[1]);
             tile.addSnake();
             this.snakeTiles.add(tile);
         }
@@ -66,7 +66,7 @@ public class Snake {
         int newRow = this.directionMoving.newRow(this.snakeTiles.get(0).getRow());
         int newCol = this.directionMoving.newCol(this.snakeTiles.get(0).getCol());
 
-        BoardSquare tile = this.board.tileAt(newRow, newCol);
+        BoardSquare tile = this.board.getTileAt(newRow, newCol);
 
         // snake doesn't move if tile is null (off screen) or already part of snake body
         if (tile == null || this.snakeTiles.contains(tile)) {

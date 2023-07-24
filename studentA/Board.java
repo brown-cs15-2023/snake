@@ -41,7 +41,7 @@ public class Board {
      * @param col column of tile to get
      * @return the BoardSquare at the given indices, or null if indices are out of bounds
      */
-    public BoardSquare tileAt(int row, int col) {
+    public BoardSquare getTileAt(int row, int col) {
         if (row >= 0 && row < Constants.NUM_ROWS && col >= 0 && col < Constants.NUM_COLS) {
             return this.tiles[row][col];
         }
