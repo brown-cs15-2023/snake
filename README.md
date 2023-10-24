@@ -4,7 +4,7 @@
 In this repository, we have the code for three different implementations of the "snake" game. 
 If you run the code, you'll see that the programs have identical **functionality**, but if you
 look through the code, you'll notice the code bases actually look quite different! This goes
-to show that for one given program, there are infinite ways you can design and write code to 
+to show that for one given program, there are many ways you can design and write code to 
 implement that program.
 
 If Snake were a real CS15 assignment, all 3 of these implementations would receive a 100% for
